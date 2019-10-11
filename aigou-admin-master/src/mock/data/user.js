@@ -6,6 +6,13 @@ const LoginUsers = [
     password: '123456',
     avatar: 'https://raw.githubusercontent.com/taylorchen709/markdown-images/master/vueadmin/user.png',
     name: '张某某'
+  },
+  {
+    id: 2,
+    username: 'admin',
+    password: 'admin',
+    avatar: 'https://raw.githubusercontent.com/taylorchen709/markdown-images/master/vueadmin/user.png',
+    name: '骚某某'
   }
 ];
 
