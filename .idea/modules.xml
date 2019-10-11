@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aigou-admin-master/aigou-admin-master.iml" filepath="$PROJECT_DIR$/aigou-admin-master/aigou-admin-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aigou-web-parent.iml" filepath="$PROJECT_DIR$/aigou-web-parent.iml" />
+    </modules>
+  </component>
+</project>
