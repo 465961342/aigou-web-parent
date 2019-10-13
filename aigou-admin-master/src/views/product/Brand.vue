@@ -209,8 +209,9 @@
             loadTypeTree(){
                 this.$http.get("/product/productType/loadTypeTree")
                     .then(res=>{
+                        console.debug(res);
                         /*this.options = this.productTypes = res.data;*/
-                        this.options = this.getTreeData(res.data);
+                        this.options = res.data;
                     })
             },
             handleChange(){
@@ -234,7 +235,7 @@
                 }).catch({});
             },
             // 递归方法:去掉tree里面的空数组
-            getTreeData(data) {
+            /*getTreeData(data) {
                 // 循环遍历json数据
                 for (var i = 0; i < data.length; i++) {
 
@@ -247,7 +248,7 @@
                     }
                 }
                 return data;
-            },
+            },*/
             //获取品牌列表
 			getbrands() {
 				let para = {
@@ -339,7 +340,7 @@
                                         this.addLoading = false;
                                         //NProgress.done();
                                         this.$message({
-                                            message: '添加成功',
+                                            message: '修改成功',
                                             type: 'success'
                                         });
                                         this.$refs['editForm'].resetFields();
