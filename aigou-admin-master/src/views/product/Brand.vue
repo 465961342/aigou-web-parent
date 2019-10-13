@@ -213,9 +213,9 @@
                         this.options = this.getTreeData(res.data);
                     })
             },
-            /*handleChange(){
+            handleChange(){
 
-            },*/
+            },
 
             /*编辑获取回填菜单*/
             loadGetPath(index, row){
@@ -318,17 +318,20 @@
 			},
 			//编辑
             editSubmit: function () {
-                this.$refs.addForm.validate((valid) => {
+                this.$refs.editForm.validate((valid) => {
                     if (valid) {
-                        this.$confirm('确认提交吗？', '提示', {}).then(() => {
+                        this.$confirm('确认修改吗？', '提示', {}).then(() => {
                             this.addLoading = true;
                             //NProgress.start();
-                            let para = Object.assign({}, this.addForm);
-                            for(var i = 0;i<this.editForm.productOptions.length ; i++){
-                                var b = this.editForm.productOptions[i];
+                            var b = '';
+                            let para = Object.assign({}, this.editForm);
+                            for(var i = 0;i<this.productOptions.length ; i++){
+                                b = this.productOptions[i];
                             }
-                            para.productOptions = b;
-                            console.debug(para);
+                            console.debug(b)
+                            para.productTypeId = b;
+                            console.debug("----------------------")
+                            console.debug(para.productTypeId);
                             this.$http.post("/product/brand/add",para).then(
                                 res=>{
                                     let {success,message,restObj} = res.data;
@@ -339,8 +342,8 @@
                                             message: '添加成功',
                                             type: 'success'
                                         });
-                                        this.$refs['editSubmit'].resetFields();
-                                        this.addFormVisible = false;
+                                        this.$refs['editForm'].resetFields();
+                                        this.editFormVisible = false;
                                         this.getbrands();
                                     }else{
                                         this.$message({
