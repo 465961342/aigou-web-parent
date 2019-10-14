@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aigou-admin-master/aigou-admin-master.iml" filepath="$PROJECT_DIR$/aigou-admin-master/aigou-admin-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/aigou-web-parent.iml" filepath="$PROJECT_DIR$/aigou-web-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecommerce/ecommerce.iml" filepath="$PROJECT_DIR$/ecommerce/ecommerce.iml" />
     </modules>
   </component>
 </project>
