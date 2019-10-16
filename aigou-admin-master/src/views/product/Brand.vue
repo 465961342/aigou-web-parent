@@ -277,7 +277,6 @@
             },
             handleRemove(file, fileList){
                 console.log(file, fileList);
-                console.debug(22222222222);
             },
             handlePreview(file){
                 console.log(file);
