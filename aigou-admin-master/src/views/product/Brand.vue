@@ -460,7 +460,6 @@
                                 var b = this.addForm.productTypeId[i];
                             }
                             para.productTypeId = b;
-                            console.debug(para);
                             this.$http.post("/product/brand/add",para).then(
                                 res=>{
                                     let {success,message,restObj} = res.data;

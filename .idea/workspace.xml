@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c036e207-18ba-4326-8c10-2e2b53aac657" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/aigou-admin-master/src/views/product/Product.vue" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/aigou-admin-master/package.json" afterPath="$PROJECT_DIR$/aigou-admin-master/package.json" />
+      <change beforePath="$PROJECT_DIR$/aigou-admin-master/src/main.js" afterPath="$PROJECT_DIR$/aigou-admin-master/src/main.js" />
+      <change beforePath="$PROJECT_DIR$/aigou-admin-master/src/routes.js" afterPath="$PROJECT_DIR$/aigou-admin-master/src/routes.js" />
       <change beforePath="$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand.vue" afterPath="$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,32 +22,65 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ecommerce/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
+            <state relative-caret-position="0">
               <caret line="410" column="14" lean-forward="false" selection-start-line="410" selection-start-column="14" selection-end-line="410" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Brand.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Brand.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="277" column="41" lean-forward="true" selection-start-line="277" selection-start-column="41" selection-end-line="277" selection-end-column="41" />
+            <state relative-caret-position="283">
+              <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#template#0;n#el-table-column#5;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductType.Vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/ProductType.Vue">
+      <file leaf-file-name="Product.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/Product.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="230">
+              <caret line="542" column="59" lean-forward="true" selection-start-line="542" selection-start-column="59" selection-end-line="542" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#el-col#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#template#0;n#el-table-column#8;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#template#0;n#el-table-column#8;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-pagination#0;n#el-col#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="e#711#757#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="49" column="50" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,20 +90,37 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>users</find>
-      <find>addFormVisible</find>
-      <find>handleEdit</find>
-      <find>handleChange</find>
-      <find>editSubmit</find>
-      <find>options</find>
       <find>handlePreview</find>
       <find>getTreeData</find>
-      <find>loadTypeTree</find>
       <find>FileList</find>
       <find>saveimg</find>
       <find>changeremove</find>
+      <find>getproducts</find>
+      <find>user</find>
+      <find>User</find>
+      <find>handlechange</find>
+      <find>handleChange</find>
+      <find>productTypeId</find>
+      <find>loadTypeTree</find>
+      <find>addForm.productTypeId</find>
+      <find>addFormVisible</find>
+      <find>onSaleTime</find>
+      <find>editForm</find>
+      <find>loadGetPath</find>
+      <find>ext</find>
+      <find>defaultParams</find>
+      <find>options</find>
+      <find>currentValue</find>
+      <find>productOptions</find>
+      <find>handleEdit</find>
+      <find>editSubmit</find>
+      <find>fileList</find>
     </findStrings>
     <replaceStrings>
       <replace>brands</replace>
+      <replace>products</replace>
+      <replace>getProducts</replace>
+      <replace>Product</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -83,13 +137,14 @@
         <option value="$PROJECT_DIR$/aigou-admin-master/index.html" />
         <option value="$PROJECT_DIR$/aigou-admin-master/config/index.js" />
         <option value="$PROJECT_DIR$/aigou-admin-master/src/mock/data/user.js" />
-        <option value="$PROJECT_DIR$/aigou-admin-master/src/main.js" />
         <option value="$PROJECT_DIR$/aigou-admin-master/src/views/Home.vue" />
-        <option value="$PROJECT_DIR$/aigou-admin-master/src/routes.js" />
         <option value="$PROJECT_DIR$/aigou-admin-master/src/views/product/ProductType.Vue" />
         <option value="$PROJECT_DIR$/aigou-admin-master/src/views/Login.vue" />
         <option value="$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand1.vue" />
+        <option value="$PROJECT_DIR$/aigou-admin-master/src/routes.js" />
+        <option value="$PROJECT_DIR$/aigou-admin-master/src/main.js" />
         <option value="$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand.vue" />
+        <option value="$PROJECT_DIR$/aigou-admin-master/src/views/product/Product.vue" />
       </list>
     </option>
   </component>
@@ -103,10 +158,10 @@
     <handled-path value="$PROJECT_DIR$/aigou-admin-master/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="52" />
-    <option name="y" value="103" />
+    <option name="x" value="35" />
+    <option name="y" value="37" />
     <option name="width" value="1647" />
-    <option name="height" value="875" />
+    <option name="height" value="935" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -123,9 +178,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,32 +194,10 @@
               <item name="aigou-web-parents" type="462c0819:PsiDirectoryNode" />
               <item name="aigou-admin-master" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="aigou-web-parents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aigou-web-parents" type="462c0819:PsiDirectoryNode" />
-              <item name="aigou-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aigou-web-parents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aigou-web-parents" type="462c0819:PsiDirectoryNode" />
-              <item name="aigou-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aigou-web-parents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aigou-web-parents" type="462c0819:PsiDirectoryNode" />
-              <item name="aigou-admin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,12 +209,12 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Softwere\IDEA\aigou-web-parents\aigou-admin-master\src\views\product" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Softwere\IDEA\aigou-web-parents\aigou-admin-master\src\views\product" />
       <recent name="D:\Softwere\IDEA\aigou-web-parents\ecommerce\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Softwere\IDEA\aigou-web-parents\aigou-admin-master\src\views\product" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,7 +335,9 @@
       <workItem from="1570984417116" duration="896000" />
       <workItem from="1571056685621" duration="4817000" />
       <workItem from="1571103966193" duration="627000" />
-      <workItem from="1571193607709" duration="11497000" />
+      <workItem from="1571193607709" duration="12013000" />
+      <workItem from="1571237561715" duration="49000" />
+      <workItem from="1571307022784" duration="22300000" />
     </task>
     <task id="LOCAL-00001" summary="前端代码更新">
       <created>1570799767926</created>
@@ -359,11 +395,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571215313083</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="前端代码更新">
+      <created>1571215356325</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571215356325</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52851000" />
+    <option name="totallyTimeSpent" value="75716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -378,14 +421,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18099548" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47171944" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6674208" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6097285" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19581544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17435622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -397,6 +439,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,13 +490,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/mock/data/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8398">
@@ -461,6 +497,7 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#template#0;n#el-table-column#5;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -479,6 +516,7 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#template#0;n#el-table-column#5;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -509,8 +547,7 @@
         <state relative-caret-position="338">
           <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
-            <element signature="e#0#42#0" expanded="false" />
-            <element signature="e#220#254#0" expanded="false" />
+            <element signature="e#711#757#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,9 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,8 +622,7 @@
         <state relative-caret-position="312">
           <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
-            <element signature="e#0#42#0" expanded="false" />
-            <element signature="e#220#254#0" expanded="false" />
+            <element signature="e#711#757#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,9 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,6 +648,7 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#template#0;n#el-table-column#5;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -670,8 +701,7 @@
         <state relative-caret-position="312">
           <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
-            <element signature="e#0#42#0" expanded="false" />
-            <element signature="e#220#254#0" expanded="false" />
+            <element signature="e#711#757#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -680,9 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,6 +727,7 @@
           <folding>
             <element signature="n#style#0;n#img#0;n#template#0;n#el-table-column#5;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,9 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,29 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-            <element signature="e#220#254#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,37 +842,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/ProductType.Vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ecommerce/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
+        <state relative-caret-position="0">
           <caret line="410" column="14" lean-forward="false" selection-start-line="410" selection-start-column="14" selection-end-line="410" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand1.vue">
+    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand1.vue" />
+    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/ProductType.Vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="125" column="31" lean-forward="true" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
+        <state relative-caret-position="416">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="49" column="50" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="e#711#757#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/Brand.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="277" column="41" lean-forward="true" selection-start-line="277" selection-start-column="41" selection-end-line="277" selection-end-column="41" />
+        <state relative-caret-position="283">
+          <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#img#0;n#template#0;n#el-table-column#5;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aigou-admin-master/src/views/product/Product.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="542" column="59" lean-forward="true" selection-start-line="542" selection-start-column="59" selection-end-line="542" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#el-col#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#template#0;n#el-table-column#8;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#template#0;n#el-table-column#8;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-pagination#0;n#el-col#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#el-form#0;n#el-dialog#1;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
