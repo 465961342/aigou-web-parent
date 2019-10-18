@@ -328,14 +328,14 @@
             },
             //文件上传成功前的钩子函数
             saveBefo(file){
-                //console.log("filecount",this.fileList.length);
+                /*//console.log("filecount",this.fileList.length);
                 if(this.fileList.length>0){
                     this.$message({
                         message: '只能上传一张logo图片',
                         type: 'warning'
                     });
                     return false;//停止上传
-                }
+                }*/
             },
             //文件上传成功后的钩子函数
             saveimg(response,file,fileList){
@@ -359,6 +359,7 @@
                 let fileId = '';
                 if(file.size){
                     fileId =file.response.restObj;
+                console.debug("fileId================"+fileId)
                 }else{
                     fileId =file.url.slice(19);
                 }
@@ -506,10 +507,11 @@
             },
 			//显示编辑界面
 			handleEdit: function (index, row) {
+                console.debug("row------------",row);
                 this.fileList = [];
 				this.editFormVisible = true;
 				this.editForm = Object.assign({}, row);
-                this.fileList.push({"url":"http://172.16.4.218" + row.logo});
+                this.fileList.push({"url":"http://172.16.4.218" + row.medias});
                 this.loadGetPath(index, row);
                 console.debug(this.editForm);
 			},
@@ -531,7 +533,7 @@
                 };
             },
 			//编辑
-			editSubmit: function () {
+			editSubmit: function (file) {
                 this.$refs.editForm.validate((valid) => {
                     if (valid) {
                         this.$confirm('确认提交吗？', '提示', {}).then(() => {
@@ -542,7 +544,12 @@
                             }
                             //从fileList中获取文件路径用，拼接给medias赋值
                             console.debug(this.fileList);
-                            para.medias = this.fileList.map(file=>file.url).join(",");
+                            if(file.response != null){
+                                para.medias = this.fileList.map(file=>file.url).join(",");
+                            }else{
+                                para.medias = this.fileList.map(file=>file.response.restObj).join(",");
+                            }
+                            console.debug("-----------------"+para.medias)
                             /*para.medias = this.fileList;*/
                             para.productTypeId = b;
                             this.$http.post("/product/product/add",para).then(
@@ -552,15 +559,15 @@
                                         this.addLoading = false;
                                         //NProgress.done();
                                         this.$message({
-                                            message: '添加成功',
+                                            message: '修改成功',
                                             type: 'success'
                                         });
-                                        this.$refs['addForm'].resetFields();
+                                        this.$refs['editForm'].resetFields();
                                         this.editFormVisible = false;
                                         this.getProducts();
                                     }else{
                                         this.$message({
-                                            message: '添加失败',
+                                            message: '修改失败',
                                             type: 'error'
                                         });
                                     }
