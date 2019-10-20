@@ -241,10 +241,23 @@
                 </el-card>
 
             <!--sku动态table的展示-->
-            <el-table :data="skus" highlight-current-row style="width: 100%;">
+            <!--<el-table :data="skus" highlight-current-row style="width: 100%;">
                   <el-table-column v-for="(value,key) in skus[0]" :label="key" :prop="key">
                   </el-table-column>
+            </el-table>-->
+            <el-table :data="skus" highlight-current-row style="width: 100%;">
+                  <!--sku属性-->
+                  <el-table-column v-if="key!='price'&&key!='store'&&key!='indexs'" v-for="(value,key) in skus[0]" :label="key" :prop="key">
+                  </el-table-column>
+                  <!--price和stroe-->
+                  <el-table-column v-if="(key=='price'||key=='store')&&key!='indexs'" v-for="(value,key) in skus[0]" :label="key" :prop="key">
+                    <template scope="scope">
+                      <el-input v-model="scope.row[key]" auto-complete="false"/>
+                    </template>
+                  </el-table-column>
             </el-table>
+
+
 
             <div slot="footer" class="dialog-footer">
                 <el-button @click.native="skuPropertiesDialogVisible = false">取消</el-button>
@@ -545,7 +558,34 @@
             },
             //sku属性保存
             handleSaveSkuProperties(){
+                let productId = this.sels[0].id;
 
+                let param = {};
+                param.skuProperties = this.skuProperties;
+                param.skus = this.skus;
+
+                this.$confirm('确认保存吗?', '提示', {
+                    type: 'warning'
+                }).then(() => {
+                    this.$http.post("/product/product/updateSkuProperties?productId="+productId,param)
+                        .then(res=>{
+                            let {success,message,restObj} = res.data;
+                            if(success){
+                                this.$message({
+                                    message: '保存成功!',
+                                    type: 'success'
+                                });
+                                this.skuPropertiesDialogVisible = false;
+                            }else{
+                                this.$message({
+                                    message: message,
+                                    type: 'error'
+                                });
+                            }
+                        })
+                }).catch(() => {
+
+                });
             },
             //上架
             handleOnSale(){},
@@ -813,27 +853,37 @@
             skuProperties:{
                 handler(val,oldval){
                     //过滤掉options为空数组的sku属性
-                    let skuPropertiesArr = this.skuProperties.filter(e=>e.options.length>0);
+                    let skuPropertiesArr =
+                        this.skuProperties.filter(e=>e.options.length>0);
                     let result = skuPropertiesArr.reduce((pre,cur,currentIndex)=>{
-                        //pre  [{}]
-                        //cur {specName:"年龄",options:["白皙","小麦黄"]}
-                        //结果: [{年龄:"白皙"},{"年龄":"小麦黄"}]
-                        let temp = [];
-                        pre.forEach(e1=>{ //e1 {} 如果是第二次reduce{年龄:"萝莉"}
-                            cur.options.forEach((e2,index)=>{ //e2 "白皙"  "小麦黄"
-                                let obj = Object.assign({},e1);
-                                obj[cur.specName] = e2;
-                                //判断是否是最后一次reduce
-                                if(currentIndex==skuPropertiesArr.length-1){
-                                    obj.price = 0;
-                                    obj.store = 0;
-                                }
-                                temp.push(obj);
-                            })
-                        });
-                        return temp;
-                    },[{}]);
-
+                            //pre  [{}]
+                            //cur {specName:"年龄",options:["白皙","小麦黄"]}
+                            //结果: [{年龄:"白皙"},{"年龄":"小麦黄"}]
+                            let temp = [];
+                            //外层循环计算的是第几个sku属性
+                            pre.forEach(e1=>{ //e1 {} 如果是第二次reduce{年龄:"萝莉"}
+                                //内层循环遍历的是第几个sku属性选项
+                                cur.options.forEach((e2,index)=>{ //e2 "白皙"  "小麦黄"
+                                    let obj = Object.assign({},e1);
+                                    obj[cur.specName] = e2;
+                                    //获取上一次的indexs,后面拼接这一次的索引
+                                    let lastIndexs = obj.indexs;
+                                    console.debug("lastIndexs",lastIndexs);
+                                    if(!lastIndexs) lastIndexs = "";
+                                    //判断是否是最后一次reduce
+                                    if(currentIndex == skuPropertiesArr.length-1){
+                                        obj.price = 0;
+                                        obj.store = 0;
+                                        lastIndexs = lastIndexs+index;
+                                    }else{
+                                        lastIndexs = lastIndexs+index+"_";
+                                    }
+                                    obj.indexs = lastIndexs;
+                                    temp.push(obj);
+                                })
+                            });
+                            return temp;
+                        },[{}]);
                     this.skus = result;
                 },
                 deep:true
