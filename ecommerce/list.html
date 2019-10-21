@@ -88,10 +88,12 @@
 				}
 			});
 		</script>
+
+        <script type="text/javascript" src="js/Vue/vue.js"></script>
 	</head>
 
 	<body class="pace-done">
-
+    <div id="app">
 		<!-- 站点选择 -->
 		<div class="header-top">
 			<div class="header-box">
@@ -236,7 +238,7 @@
 							</div>
 							<div class="search-box">
 								<div class="search-box-con">
-									<input type="text" class="keyword search-box-input SZY-SEARCH-BOX-KEYWORD" name="keyword" tabindex="9" autocomplete="off" data-searchwords="特价商品" placeholder="搜索特价商品" value="">
+									<input type="text" class="keyword search-box-input SZY-SEARCH-BOX-KEYWORD" name="keyword" tabindex="9" autocomplete="off" data-searchwords="特价商品" placeholder="搜索特价商品" value="" v-model="keyword">
 								</div>
 							</div>
 							<input type="hidden" id="searchtype" name="type" value="0" class="searchtype">
@@ -724,7 +726,7 @@
 			</div>
 
 			<!--当前位置，面包屑-->
-			<div class="breadcrumb clearfix">
+			<div class="breadcrumb clearfix" v-if="productTypeId">
 				<a href="http://www.itsource.cn/" class="index">首页</a>
 
 				<span class="crumbs-arrow">&gt;</span>
@@ -854,7 +856,7 @@
 					<!-- -->
 					<!--品牌-->
 
-					<dl class="" id="attr-group-dl-brand">
+					<dl class="" id="attr-group-dl-brand" v-if="productTypeId">
 						<dt>品牌：</dt>
 						<dd class="moredd">
 							<label id="brand-more"><a href="javascript:void(0);" onclick="slideDiv(this, &#39;brand-abox&#39;, &#39;83&#39;);" class="more">更多</a></label>
@@ -4374,6 +4376,42 @@
 		<!-- 第三方流量统计 -->
 		<div style="display: none;"></div>
 		<!-- 底部 _end-->
+    </div>
+
+    <script type="text/javascript">
+        let app = new Vue({
+            el:"#app",
+            data:{
+                keyword:'',
+                productTypeId:null
+            },
+            methods:{
+                getQueryString() {
+                    var qs = location.search.substr(1), // 获取url中"?"符后的字串
+                    args = {}, // 保存参数数据的对象
+                        items = qs.length ? qs.split("&") : [], // 取得每一个参数项,
+                        item = null,
+                        len = items.length;
+                    for(var i = 0; i < len; i++) {
+                        item = items[i].split("=");
+                        var name = decodeURIComponent(item[0]),
+                            value = decodeURIComponent(item[1]);//解码，中文乱码
+                        if(name) {
+                            args[name] = value;
+                        }
+                    }
+                    return args;
+                }
+            },
+            mounted(){
+                //获取请求路径中的参数
+                let args = this.getQueryString();
+                this.keyword = args.keyword;
+                this.productTypeId = args.productType;
+            }
+        })
+    </script>
+
 
 		<script type="text/javascript" src="js/jquery.fly.min.js"></script>
 		<script type="text/javascript" src="js/szy.cart.js"></script>

@@ -31,7 +31,7 @@
 		<el-table :data="products" highlight-current-row v-loading="listLoading" @selection-change="selsChange" style="width: 100%;">
 			<el-table-column type="selection" width="55">
 			</el-table-column>
-			<el-table-column type="index" width="50">
+			<el-table-column type="index" width="70">
 			</el-table-column>
 			<el-table-column prop="name" label="标题" width="150" sortable align="center">
 			</el-table-column>
@@ -588,9 +588,63 @@
                 });
             },
             //上架
-            handleOnSale(){},
+            handleOnSale(){
+                var ids = this.sels.map(item => item.id).toString();
+                this.$confirm('确认上架选中记录吗？', '提示', {
+                    type: 'warning'
+                }).then(() => {
+                    this.listLoading = true;
+                    this.$http.get("/product/product/onSale?ids="+ids)
+                        .then(res=>{
+                            this.listLoading = false;
+                            let {success,message,restObj} = res.data;
+                            if (success){
+                                this.$message({
+                                    message: '上架成功',
+                                    type: 'success'
+                                });
+                                this.getProducts();
+                            }else {
+                                this.$message({
+                                    message: message,
+                                    type: 'error'
+                                });
+                            }
+
+                        })
+                }).catch(() => {
+
+                });
+            },
             //下架
-            handleOffSale(){},
+            handleOffSale(){
+                var ids = this.sels.map(item => item.id).toString();
+                this.$confirm('确认下架选中记录吗？', '提示', {
+                    type: 'warning'
+                }).then(() => {
+                    this.listLoading = true;
+                    this.$http.get("/product/product/offSale?ids="+ids)
+                        .then(res=>{
+                            this.listLoading = false;
+                            let {success,message,restObj} = res.data;
+                            if (success){
+                                this.$message({
+                                    message: '下架成功',
+                                    type: 'success'
+                                });
+                                this.getProducts();
+                            }else {
+                                this.$message({
+                                    message: message,
+                                    type: 'error'
+                                });
+                            }
+
+                        })
+                }).catch(() => {
+
+                });
+            },
             //格式化时间
             formatOnSaleTime(row, column){
                 return this.formatTime(row.onSaleTime)
@@ -843,7 +897,7 @@
                 });
             }
         },
-		mounted() {
+		mounted(){
 			this.getProducts();
 			this.loadTypeTree();
 			this.getBrands();
@@ -885,6 +939,13 @@
                             return temp;
                         },[{}]);
                     this.skus = result;
+                    this.$http.get("/product/sku/getPrice/"+this.sels[0].id).then(res=>{
+                        let s = res.data;
+                        for (let i =0;i<s.length;i++){
+                            this.skus[i].price = s[i].price
+                            this.skus[i].store = s[i].availableStock
+                        }
+                    })
                 },
                 deep:true
             }
