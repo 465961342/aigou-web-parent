@@ -477,6 +477,14 @@
 
             //显示属性维护
             handleViewProperties(){
+                let status = this.sels[0].state;
+                if(status == 1){
+                    this.$message({
+                        message:'该商品已上架，无法查看显示属性',
+                        type:'warning'
+                    });
+                    return
+                }
                 //只能选中一行数据
                 if(this.sels.length==0){
                     this.$message({
@@ -530,6 +538,14 @@
             },
             //sku属性维护
             handleSkuProperties(){
+                let status = this.sels[0].state;
+                if(status == 1){
+                    this.$message({
+                        message:'该商品已上架，无法查看sku属性',
+                        type:'warning'
+                    });
+                    return
+                }
                 //只能选中一行数据
                 if(this.sels.length==0){
                     this.$message({
@@ -558,6 +574,7 @@
             },
             //sku属性保存
             handleSaveSkuProperties(){
+
                 let productId = this.sels[0].id;
 
                 let param = {};
@@ -589,6 +606,24 @@
             },
             //上架
             handleOnSale(){
+
+                let on = '';
+
+                for(let index = 0;index<this.sels.length; index++){
+                    if(this.sels[index].state == 1){
+                        on += this.sels[index].name + ","
+                    }
+                }
+
+                let onName = on.substring(0,on.length-1);
+                if(onName != ''){
+                    this.$message({
+                        message:'该商品'+onName+'已上架，无法重复上架',
+                        type:'warning'
+                    });
+                    return
+                }
+
                 var ids = this.sels.map(item => item.id).toString();
                 this.$confirm('确认上架选中记录吗？', '提示', {
                     type: 'warning'
@@ -618,6 +653,24 @@
             },
             //下架
             handleOffSale(){
+
+                let off = '';
+
+                for(let index = 0;index<this.sels.length; index++){
+                    if(this.sels[index].state == 0){
+                        off += this.sels[index].name + ","
+                    }
+                }
+
+                let offName = off.substring(0,off.length-1);
+                if(offName != ''){
+                    this.$message({
+                        message:'该商品'+offName+'已下架，无法重复下架',
+                        type:'warning'
+                    });
+                    return
+                }
+
                 var ids = this.sels.map(item => item.id).toString();
                 this.$confirm('确认下架选中记录吗？', '提示', {
                     type: 'warning'
@@ -722,6 +775,13 @@
 			},
             //删除
             handleDel: function (index, row) {
+                if(row.state == 1){
+                    this.$message({
+                        message:'该商品已上架，无法删除',
+                        type:'warning'
+                    });
+                    return
+                }
                 this.$confirm('确认删除该记录吗?', '提示', {
                     type: 'warning'
                 }).then(() => {
@@ -750,6 +810,13 @@
             },
 			//显示编辑界面
 			handleEdit: function (index, row) {
+                if(row.state == 1){
+                    this.$message({
+                        message:'该商品已上架，无法修改',
+                        type:'warning'
+                    });
+                    return
+                }
                 console.debug("row------------",row);
                 this.fileList = [];
 				this.editFormVisible = true;
